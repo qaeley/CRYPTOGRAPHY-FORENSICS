@@ -3,7 +3,7 @@
 ## 🛠️ Phase 1: Building the Foundation
 Before attempting the challenge, I realized I needed to understand how Python handles data. I spent time documenting the core fundamentals (Variables, Loops, and Functions) to ensure I could write my own scripts instead of relying on online converters.
 
-**My Reference:** [Python Fundamentals & Cheatsheet](./PYTHON_CHEAT_SHEET.md)
+**My Reference:** [Python Fundamentals & Cheatsheet]([./PYTHON_CHEAT_SHEET.md](https://github.com/qaeley/CYBERSECURITY/blob/e32b1bb1f09f8ae155d7e41c5e6f902dc74c511b/CRYPTOGRAPHY-FORENSICS/Python-Cheatsheet.md))
 
 ---
 
