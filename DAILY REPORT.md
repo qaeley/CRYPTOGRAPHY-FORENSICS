@@ -36,17 +36,25 @@ Which categories did you practice?
 ### 5. Reflection (Qualitative)
 
 **What went well today?**
-I studied the basics and learned about the different key concepts
+
+I studied the basics and learned about the different key concepts.
+
 ---
 
 **What challenged you?**
+
 Feeling a bit lost on implementation; focused on taking notes for now.
+
 ---
 
 **Key learning:**
+
 I discovered that cryptography isn't just about "scrambling" text; it is a structured process of data transformation.
+
 ---
 
 **Tomorrow's focus:**
-I might ask our supervisor regarding resources I should use to learn cryptography
+
+I might ask our supervisor regarding resources I should use to learn cryptography.
+
 ---
