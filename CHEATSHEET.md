@@ -9,7 +9,7 @@
 
 ---
 
-## 🍳 Data Manipulation & Forensics
+## Data Manipulation & Forensics
 ### [CyberChef](https://gchq.github.io/CyberChef/)
 * **Purpose:** The "Cyber Swiss Army Knife" for all data tasks.
 * **Common Recipes:**
