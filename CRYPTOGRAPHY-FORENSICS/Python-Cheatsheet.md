@@ -110,17 +110,23 @@ say_hello("Mario")
 | `chr(97)` | Integer | Character | Converts an **ASCII number** back to a character ("a"). |
 
 ---
-
-## 🏗️ Python Fundamentals
-
-### 1. Variables & Assignment
-* **Assignment:** `variable = value` (e.g., `i = [1, 2, 3]`). 
-* **Note:** To copy a list, assign it directly: `i = number_list`.
-* **Naming:** Use `underscores_for_names`. Python is **case-sensitive** (`item` != `Item`).
-
-### 2. Loops & Logic
 * **For Loop:** Automatically iterates through a list. No need to define the variable first.
   ```python
   for n in number_list:
       print(chr(n)) # Converts each number in the list
   ```
+
+## Hex & Bytes Conversion
+**Core Idea:** Essential for moving between Hexadecimal strings (common in CTFs) and raw bytes (needed for XOR and crypto math).
+
+* **Hex to Bytes:** Use `bytes.fromhex("string")`.
+* **Bytes to Hex:** Use the `.hex()` method on a byte object.
+
+```python
+# From Hex String to Bytes
+raw_bytes = bytes.fromhex("68656c6c6f") 
+# Result: b'hello'
+
+# From Bytes back to Hex String
+hex_string = raw_bytes.hex()
+# Result: "68656c6c6f"
