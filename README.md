@@ -1,2 +1,0 @@
-# CYBERSECURITY
-Cybsersecurity Learning Journey
