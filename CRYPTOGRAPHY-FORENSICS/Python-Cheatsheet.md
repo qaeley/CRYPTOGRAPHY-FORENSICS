@@ -74,5 +74,28 @@ else:
 
 ---
 
-## 🏗️ Functions for Code Reusability
-**Core Idea:** Functions are blocks of organized, reusable code that perform a specific
+## Functions for Code Reusability
+**Core Idea:** Functions are blocks of organized, reusable code that perform a specific task, promoting efficiency and modularity.
+
+### 1. Defining a Function (`def`)
+* **Syntax:** Use the `def` keyword followed by the function name and parentheses for parameters.
+* **Reusability:** The primary purpose is to run the same code multiple times without rewriting the logic.
+* **Example:** Calling `say_hello("Mario")` and `say_hello("Luigi")` uses the same function to produce different results based on the input.
+
+
+### 2. The `pass` Keyword 
+* **Null Operation:** This is a command that does literally nothing when executed.
+* **Placeholder:** It is used in function definitions when you haven't implemented the logic yet.
+* **Preventing Errors:** Using `pass` prevents Python from throwing a "Syntax Error" for having an empty function.
+
+```python
+# Function Definition Example
+def get_internet():
+    # Logic not written yet
+    pass 
+
+def say_hello(name):
+    print("Hello " + name)
+
+# Calling the function
+say_hello("Mario")
