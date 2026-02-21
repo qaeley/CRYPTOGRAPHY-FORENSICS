@@ -1,2 +1,2 @@
-# CRYPTOGRAPHY-FORENSICS
-Cryptography Learning Journey
+# CYBERSECURITY
+Cybsersecurity Learning Journey
