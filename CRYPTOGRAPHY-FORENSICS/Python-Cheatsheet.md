@@ -180,7 +180,7 @@ print(readable_text) # Output: rot13
 ## 🔢 Large Number Conversion (PyCryptodome)
 **Core Idea:** Converting between raw bytes and large integers for mathematical operations.
 
-* **Requirement:** Install library via `pip install pycryptodome` and import:
+* **Requirement:** Install library via `pip install pycryptodome` (cmd prompt or terminal) and import:
   `from Crypto.Util.number import *`
 
 ```python
