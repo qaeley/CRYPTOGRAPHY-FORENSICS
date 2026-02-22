@@ -37,3 +37,26 @@ To move between these in Python, refer to the functions in my [Python Cheat Shee
 * `ord()` / `chr()` for ASCII.
 * `bytes.fromhex()` for Hexadecimal.
 * `base64` library for Base64 conversions.
+
+# 🧮 Mathematical Representation of Messages
+
+## Converting Text to Numbers
+Cryptosystems like **RSA** operate on mathematical numbers, but messages consist of characters. To apply mathematical operations, messages must be converted into numeric form.
+
+### The Conversion Process:
+1. **Ordinal Bytes:** Take the ordinal (ASCII/Byte) value of each character in the message.
+2. **Hexadecimal Conversion:** Convert these ordinal values into hexadecimal.
+3. **Concatenation:** Combine these hex values into one long string.
+
+### Interpretation:
+* The resulting string is interpreted as a **Base-16 (Hexadecimal)** number.
+* This number can also be represented in **Base-10 (Decimal)** for use in cryptographic formulas.
+
+---
+**Example:**
+* Message: `HELLO`
+* Bytes: `72 69 76 76 79`
+* Hex: `48 45 4c 4c 4f`
+* Large Number: `0x48454c4c4f` (Hex) or `310400273487` (Decimal)
+
+
