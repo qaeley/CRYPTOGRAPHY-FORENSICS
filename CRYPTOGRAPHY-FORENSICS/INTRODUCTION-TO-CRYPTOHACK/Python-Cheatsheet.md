@@ -211,3 +211,65 @@ original_bytes = long_to_bytes(long_val)
 2. **Naming Difference:** * Package name (to install): `pycryptodome`
    * Module name (to import): `Crypto`
 3. **Interpreter Mismatch:** If `ModuleNotFoundError` persists after install, check the **Python Interpreter** in the bottom-right corner of VS Code to ensure it matches the version where you ran `pip3`.
+## ➕ List Building with `.append()`
+**Purpose:** Adds a single item to the end of an existing list. Essential for building a result set one-by-one inside a loop.
+
+* **Logic:** `list.append(item)`
+* **Behavior:** Modifies the list "in-place" (it doesn't create a new list, it changes the current one).
+
+### 🛠️ Example: Building an XOR result
+```python
+numbers = [1, 2, 3, 4]
+results = []  # Start with an empty list
+
+for n in numbers:
+    results.append(n ^ 13)  # Add the XORed result to the end
+
+print(results)  # Output: [12, 15, 14, 9]
+```
+## 🧵 String Merging with `.join()`
+**Purpose:** Converts a list of individual characters or strings back into a single, continuous string.
+
+* **Syntax:** `"separator".join(list_variable)`
+* **The "Separator":** Whatever is inside the first set of quotes is what Python puts *between* each item.
+
+### 🛠️ Common Use Cases
+
+| Separator | Code Example | Output |
+| :--- | :--- | :--- |
+| **Empty** | `"".join(['f', 'l', 'a', 'g'])` | `flag` |
+| **Space** | `" ".join(['Hello', 'World'])` | `Hello World` |
+| **Dash** | `"-".join(['a', 'b', 'c'])` | `a-b-c` |
+
+### 🔍 Practical Crypto Example
+When you process data through a loop and collect characters in a list, use `.join()` to create the final flag string.
+
+```python
+# 1. Your list of processed characters
+result_list = ['y', 'x', 'i', 'z', 'i']
+
+# 2. Join them with NO space to make the string
+final_string = "".join(result_list)
+
+# 3. Use an f-string to wrap it in the flag format
+print(f"crypto{{{final_string}}}") 
+# Output: crypto{yxizi}
+```
+## 📝 String Formatting (f-strings)
+**Purpose:** To easily insert variables or logic directly into strings.
+
+* **Syntax:** `f"Text {variable} text"`
+* **Escaping Braces:** If you need to print a literal `{` inside an f-string, you must double it: `{{`.
+
+### 🛠️ Example: Flag Formatting
+```python
+flag = "abc_123"
+
+# Standard way
+print(f"crypto{{{flag}}}") 
+# Output: crypto{abc_123}
+
+# Doing math inside f-strings
+print(f"The result is {10 + 3}") 
+# Output: The result is 13
+```
