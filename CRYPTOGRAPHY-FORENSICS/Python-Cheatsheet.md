@@ -153,3 +153,26 @@ binary_data = bytes.fromhex(hex_data)
 b64_data = base64.b64encode(binary_data)
 
 print(b64_data) # Output: b'cm90MTM='
+```
+### 🔄 Base64 Decoding
+**Core Idea:** Converting a Base64 encoded string back into its original raw bytes.
+
+* **Usage:** Use `base64.b64decode()` when you are given a Base64 string and need to retrieve the original data.
+* **The Workflow:** Base64 String -> `base64.b64decode()` -> Raw Bytes -> `.hex()` or `chr()` (depending on target format).
+
+#### Example Implementation:
+```python
+import base64
+
+# 1. Start with a Base64 string
+b64_string = "cm90MTM="
+
+# 2. Decode back to bytes
+decoded_bytes = base64.b64decode(b64_string)
+
+print(decoded_bytes) # Output: b'rot13'
+
+# 3. Optional: Convert to a regular string
+readable_text = decoded_bytes.decode()
+print(readable_text) # Output: rot13
+```
