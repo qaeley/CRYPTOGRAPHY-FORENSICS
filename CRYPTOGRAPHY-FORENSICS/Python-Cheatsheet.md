@@ -195,4 +195,19 @@ long_val = bytes_to_long(data)
 original_bytes = long_to_bytes(long_val)
 # Result: b'hello'
 ```
+## 🔧 Library Management (Pip)
+**Core Idea:** Installing and managing external packages like `PyCryptodome`.
 
+
+| Task | macOS / Linux (ZSH/Bash) | Windows (PowerShell/CMD) |
+| :--- | :--- | :--- |
+| **Install Library** | `pip3 install pycryptodome` | `pip install pycryptodome` |
+| **Safe Install** | `python3 -m pip install pycryptodome` | `python -m pip install pycryptodome` |
+| **List Packages** | `pip3 list` | `pip list` |
+| **Search Package** | `pip3 list | grep Crypto` | `pip list | findstr Crypto` |
+
+### ⚠️ Critical Rules
+1. **Terminal Only:** Commands must be run in the VS Code terminal, not inside the `.py` script.
+2. **Naming Difference:** * Package name (to install): `pycryptodome`
+   * Module name (to import): `Crypto`
+3. **Interpreter Mismatch:** If `ModuleNotFoundError` persists after install, check the **Python Interpreter** in the bottom-right corner of VS Code to ensure it matches the version where you ran `pip3`.
